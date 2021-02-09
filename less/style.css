@@ -16,9 +16,9 @@
 /* .raleway(){
 	font-family: 'Raleway', sans-serif;
 } */
-html {
-  overflow-x: hidden;
-}
+/* html{
+	overflow-x: hidden;
+} */
 /*Первый экран*/
 .main {
   height: 100vh;
@@ -3288,7 +3288,7 @@ html {
     font-family: 'Open_Sans', sans-serif;
     font-weight: bold;
     font-size: 34px;
-    width: 160px;
+    width: 50%;
     margin-bottom: 47px;
   }
   .second-footer span {
@@ -3434,6 +3434,12 @@ html {
   .qualityExamples .examples {
     margin-bottom: 65px;
   }
+  .qualityExamples .examples .slick-arrow.slick-next {
+    display: none !important;
+  }
+  .qualityExamples .examples .slick-arrow.slick-prev {
+    display: none !important;
+  }
   .qualityExamples .examplesDescription__wrapper {
     display: flex;
     flex-direction: column;
@@ -3443,6 +3449,7 @@ html {
   }
   .qualityExamples .examplesDescription-slider {
     width: 100%;
+    height: 200px;
   }
   .qualityExamples .examplesDescription-slider__wrapper {
     width: 100%;
@@ -3460,7 +3467,7 @@ html {
   .qualityExamples .examplesDescription-count {
     display: block;
     top: 423px;
-    width: 89%;
+    width: 100%;
     text-align: center;
     font-family: 'Open_Sans', sans-serif;
     font-weight: normal;
@@ -3501,7 +3508,7 @@ html {
     font-family: 'Open_Sans', sans-serif;
     font-weight: normal;
     font-size: 13px;
-    margin-top: 54px;
+    margin-top: 20px;
   }
   .qualityExamples .examplesDescription-details span {
     font-family: 'Open_Sans', sans-serif;
@@ -3532,6 +3539,9 @@ html {
   .galleryOfWorks .tunnel-slider {
     height: 170px;
     margin-right: 15px;
+  }
+  .galleryOfWorks .tunnel .slick-arrow.slick-next {
+    display: none !important;
   }
   .galleryOfWorks .gallery-slider-picture img {
     height: 100%;

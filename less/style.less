@@ -33,9 +33,9 @@
 	 font-family: 'Helvetica Neue', sans-serif;
 }
 
-html{
+/* html{
 	overflow-x: hidden;
-}
+} */
 
 /*Первый экран*/
 
@@ -3659,7 +3659,7 @@ html{
 				.open();
 				font-weight: bold;
 				font-size: 34px;
-				width: 160px;
+				width: 50%;
 				margin-bottom: 47px;
 			}
 			& span{
@@ -3822,6 +3822,12 @@ html{
 		position: relative;
 		.examples{
 			 margin-bottom: 65px;
+			 & .slick-arrow.slick-next{
+				 display: none !important;
+			 }
+			 & .slick-arrow.slick-prev{
+				 display: none !important;
+			 }
 		}
 		.examplesDescription{
 			
@@ -3834,6 +3840,7 @@ html{
 			}
 			&-slider{
 				width: 100%;
+				height: 200px;
 				&__wrapper{
 					width: 100%;
 					position: relative;
@@ -3855,7 +3862,7 @@ html{
 				display: block;
 				
 				top: 423px;
-				width: 89%;
+				width: 100%;
 				text-align: center;
 				.open();
 					font-weight: normal;
@@ -3895,7 +3902,7 @@ html{
 				.open();
 				font-weight: normal;
 				font-size: 13px;
-				margin-top: 54px;
+				margin-top: 20px;
 				
 				
 				}
@@ -3935,6 +3942,9 @@ html{
 			&-slider{
 				height: 170px;
 				margin-right: 15px;
+			}
+			& .slick-arrow.slick-next{
+				display: none !important;
 			}
 		}
 		.gallery{
