@@ -204,7 +204,7 @@
 }
 .main-header-tel p {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 0;
 }
 .main-header-tel-work {
@@ -2197,6 +2197,17 @@
     max-width: 1050px;
   }
 }
+@media (max-width: 1000px) {
+  .main-header-contact img {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 925px) {
+  .main-header-tel {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   body.lock {
     overflow: hidden;
@@ -2945,6 +2956,81 @@
     width: 90%;
   }
 }
+@media (max-width: 645px) {
+  .main-header-contact {
+    display: none;
+  }
+  /* Блок с достоинствами */
+  #contract {
+    background-size: 144px 172px;
+    background-position: 87% 132px;
+    height: 305px;
+  }
+  #contract__wrapper {
+    width: 100%;
+    height: 305px;
+    background-size: 200px 200px;
+    background-position: 93% 154px;
+  }
+  #masters {
+    background-size: 145px 189px;
+    background-position: 88% 116px;
+    height: 305px;
+  }
+  #masters__wrapper {
+    width: 100%;
+    height: 305px;
+    background-size: 200px 200px;
+    background-position: 93% 147px;
+  }
+  #delivery {
+    background-size: 188px 115px;
+    background-position: 101% 191px;
+    height: 305px;
+  }
+  #delivery__wrapper {
+    width: 100%;
+    height: 305px;
+    background-size: 200px 200px;
+    background-position: 105% 182px;
+  }
+  #quality {
+    background-size: 220px 130px;
+    background-position: 85% 176px;
+    height: 305px;
+  }
+  #quality__wrapper {
+    width: 100%;
+    height: 305px;
+    background-size: 200px 200px;
+    background-position: 93% 168px;
+  }
+  /* Примеры качества разных этапов работ */
+  .examplesDescription__wrapper {
+    flex-direction: column;
+  }
+  .examplesDescription-slider__wrapper {
+    width: 100%;
+  }
+  .examplesDescription-count {
+    width: 100%;
+  }
+  .qualityExamples .examplesDescription-slider {
+    width: 100%;
+  }
+  .qualityExamples .examplesDescription-count {
+    width: 100%;
+  }
+  .qualityExamples .examplesDescription-details {
+    width: 100%;
+  }
+  .qualityExamples .examplesDescription-details-button {
+    text-align: right;
+  }
+  .qualityExamples .examplesDescription-details-btn {
+    margin-right: 31px;
+  }
+}
 @media (max-width: 420px) {
   html.lock {
     overflow: hidden;
@@ -3522,9 +3608,6 @@
     font-size: 16px;
     margin-top: 80px;
     margin-left: 174px;
-  }
-  .galleryOfWorks {
-    height: 100vh;
   }
   .galleryOfWorks-header {
     margin: 20px auto;

@@ -235,7 +235,7 @@
 			& p{
 			// .raleway();
 			font-weight: bold;
-			font-size: 18px;
+			font-size: 17px;
 			margin-bottom: 0;
 			}
 			&-work{
@@ -2435,6 +2435,31 @@
 	.container{
 		max-width: 1050px;
 	}
+	
+}
+@media(max-width: 1000px){
+	.main{
+		&-header{
+			&-contact{
+				& img{
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+}
+@media(max-width: 925px){
+	.main{
+		&-header{
+			&-tel{
+				display: none;
+			}
+		}
+	}
+}
+@media(max-width: 820px){
+
 }
 
 @media (max-width: 767px){
@@ -3281,6 +3306,96 @@
 	}
 }
 
+@media (max-width: 645px){
+	.main{
+		&-header{
+			&-contact{
+				display: none;
+			}
+		}
+	}
+	/* Блок с достоинствами */
+	#contract{
+		background-size: 144px 172px;
+		background-position: 87% 132px;
+		height: 305px;
+		&__wrapper{
+			width: 100%;
+			height: 305px;
+			background-size: 200px 200px;
+			background-position: 93% 154px;
+		}
+	}
+	#masters{
+		background-size: 145px 189px;
+		background-position: 88% 116px;
+		height: 305px;
+		&__wrapper{
+			width: 100%;
+			height: 305px;
+			background-size: 200px 200px;
+			background-position: 93% 147px;
+		}
+	}
+	#delivery{
+		background-size: 188px 115px;
+		background-position: 101% 191px;
+		height: 305px;
+		&__wrapper{
+			width: 100%;
+			height: 305px;
+			background-size: 200px 200px;
+			background-position: 105% 182px;
+		}
+	}
+	#quality{
+			background-size: 220px 130px;
+			background-position: 85% 176px;
+			height: 305px;
+		&__wrapper{
+			width: 100%;
+			height: 305px;
+			background-size: 200px 200px;
+			background-position: 93% 168px;
+		}
+	}
+
+	/* Примеры качества разных этапов работ */
+	.examplesDescription{
+		&__wrapper{
+			flex-direction: column;
+		}
+		&-slider{
+			
+			&__wrapper{
+				width: 100%;
+			}
+		}
+		&-count{
+			width: 100%;
+		}
+	}
+	.qualityExamples {
+		& .examplesDescription{
+			&-slider{
+			width: 100%;
+			}
+			&-count{
+				width: 100%;
+			}
+			&-details{
+				width: 100%;
+				&-button{
+					text-align: right;
+				}
+				&-btn{
+					margin-right: 31px;
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 420px){
 	html.lock{
 		overflow: hidden;
@@ -3927,7 +4042,7 @@
 		
 	}
 	.galleryOfWorks{
-		height: 100vh;
+		
 		&-header{
 			margin: 20px auto;
 			& h2{
