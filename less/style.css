@@ -3079,9 +3079,6 @@
   .main-position {
     max-height: 100vh;
   }
-  .main-menuAdaptiv__wrapper {
-    height: calc(90vh + 64px);
-  }
   .main-menuAdaptiv a {
     font-size: 10px;
     font-family: 'Open_Sans', sans-serif;
