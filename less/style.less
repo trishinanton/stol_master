@@ -2476,18 +2476,18 @@
 	 	max-width: 764px;
 	 }
 	.main{
-	height: 103vh;
+	height: calc(90vh + 82px);
 	/*Меню гамбургер*/
 	
 	&-fon{
 	display: block;
 	background-color: black;
 	opacity: 0.8;
-	height: 105vh;
+	height: calc(90vh + 82px);
 	width: 50%;
 	}
 	&-position{
-		height: 105vh;
+		height: calc(90vh + 82px);
 	}
 
 	&-content{
@@ -3424,11 +3424,16 @@
 			padding-left: 30px;
 		}
 		
-
+		&-fon{
+			height: 100%;
+		}
+		&-position{
+			height: 100%;
+		}
 		
 		&-menuAdaptiv{
 			&__wrapper{
-				height: 100vh;
+				height: calc(90vh + 64px);
 			}
 			
 			& a{

@@ -2220,7 +2220,7 @@
     max-width: 764px;
   }
   .main {
-    height: 103vh;
+    height: calc(90vh + 82px);
     /*Меню гамбургер*/
     /*Основной контент*/
   }
@@ -2228,11 +2228,11 @@
     display: block;
     background-color: black;
     opacity: 0.8;
-    height: 105vh;
+    height: calc(90vh + 82px);
     width: 50%;
   }
   .main-position {
-    height: 105vh;
+    height: calc(90vh + 82px);
   }
   .main-content {
     display: flex;
@@ -3056,8 +3056,14 @@
     justify-content: flex-start;
     padding-left: 30px;
   }
+  .main-fon {
+    height: 100%;
+  }
+  .main-position {
+    height: 100%;
+  }
   .main-menuAdaptiv__wrapper {
-    height: 100vh;
+    height: calc(90vh + 64px);
   }
   .main-menuAdaptiv a {
     font-size: 10px;
