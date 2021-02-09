@@ -2477,23 +2477,25 @@
 	 	max-width: 764px;
 	 }
 	.main{
-	height: calc(90vh + 82px);
+	max-height: 100vh;
 	/*Меню гамбургер*/
 	
 	&-fon{
 	display: block;
 	background-color: black;
 	opacity: 0.8;
-	height: calc(90vh + 82px);
-	width: 50%;
+	max-height: 100vh;
+	width: 100%;
 	}
 	&-position{
 		height: 100vh;
+		width: 58%;
 	}
 
 	&-content{
 	display: flex;
 	justify-content: space-between;
+	
 	}
 
 	&-menuAdaptiv{
@@ -2584,14 +2586,18 @@
 	&-menuAdaptiv__wrapper{
 	display: block;
 	position: fixed;
-	right: -100%;
+	right: -115%;
 	z-index: 5;
 	height: 100%;
 	width: 100%;
 	transition: all 0.3s ease 0s;
 	}
 	&-menuAdaptiv__wrapper.active{
+		position: absolute;
+	width: 100%;
+	max-height: 100vh;
 	right: 0;
+	top:0;
 	}
 	&-position{
 	display: flex;
@@ -3442,10 +3448,10 @@
 		}
 		
 		&-fon{
-			height: 100vh;
+			max-height: 100vh;
 		}
 		&-position{
-			height: 100vh;
+			max-height: 100vh;
 		}
 		
 		&-menuAdaptiv{
