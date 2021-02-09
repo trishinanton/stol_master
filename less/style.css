@@ -16,7 +16,7 @@
 /* .raleway(){
 	font-family: 'Raleway', sans-serif;
 } */
-body {
+html {
   overflow-x: hidden;
 }
 /*Первый экран*/
@@ -1372,9 +1372,11 @@ body {
   justify-content: space-between;
 }
 .examplesDescription-slider {
-  width: 55%;
   display: inline-block;
   position: relative;
+}
+.examplesDescription-slider__wrapper {
+  width: 54%;
 }
 .examplesDescription-slider-picture {
   width: 581px;
@@ -1406,7 +1408,7 @@ body {
   content: none;
 }
 .examplesDescription-details {
-  width: 39%;
+  width: 40%;
   display: inline-block;
   margin-left: 40px;
 }
@@ -1451,8 +1453,10 @@ body {
   font-size: 14px;
 }
 .examplesDescription-count {
+  display: block;
   text-align: center;
-  width: 55%;
+  width: 100%;
+  margin-top: 10px;
   font-family: 'Open_Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2941,20 +2945,23 @@ body {
     width: 90%;
   }
 }
-@media (max-width: 375px) {
-  body.lock {
+@media (max-width: 420px) {
+  html.lock {
     overflow: hidden;
   }
   .container {
-    max-width: 375px;
-    padding-right: 20px;
-    padding-left: 20px;
+    max-width: 420px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin: 0;
   }
   /* Первый экран */
+  .main {
+    height: calc(90vh + 64px);
+  }
   .main .single-item > .slick-dots {
-    text-align: left;
-    padding-left: 10px;
+    justify-content: flex-start;
+    padding-left: 30px;
   }
   .main-menuAdaptiv__wrapper {
     height: 100vh;
@@ -3041,6 +3048,9 @@ body {
     margin-top: 18px;
     margin-bottom: 30px;
   }
+  .main-header {
+    height: 64px;
+  }
   .main-header-logo img {
     width: 70px;
     height: 25px;
@@ -3056,7 +3066,7 @@ body {
   }
   .main-header-telAdaptiv span {
     display: block;
-    width: 148px;
+    width: 100%;
     font-weight: 600;
     font-size: 16px;
   }
@@ -3432,6 +3442,9 @@ body {
     position: relative;
   }
   .qualityExamples .examplesDescription-slider {
+    width: 100%;
+  }
+  .qualityExamples .examplesDescription-slider__wrapper {
     width: 100%;
     position: relative;
   }
@@ -3895,6 +3908,10 @@ body {
   .container {
     max-width: 100%;
     padding-right: 10px;
+    padding-left: 10px;
+  }
+  .main .single-item > .slick-dots {
+    justify-content: flex-start;
     padding-left: 10px;
   }
   .second-footer {

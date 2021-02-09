@@ -33,7 +33,7 @@
 	 font-family: 'Helvetica Neue', sans-serif;
 }
 
-body{
+html{
 	overflow-x: hidden;
 }
 
@@ -1526,8 +1526,12 @@ body{
 		align-items: flex-start;
 		justify-content: space-between;
 	}
+	
 	&-slider{
-		width: 55%;
+		&__wrapper{
+			width: 54%;
+		}
+		
 		display: inline-block;
 		position: relative;
 		&-picture{
@@ -1561,7 +1565,7 @@ body{
 	}
 	}
 	&-details{
-		width: 39%;
+		width: 40%;
 		display: inline-block;
 		margin-left: 40px;
 		&-button{
@@ -1610,8 +1614,10 @@ body{
 			font-size: 14px;
 		}
 	&-count{
+		display: block;
 		text-align: center;
-		width: 55%;
+		width: 100%;
+		margin-top: 10px;
 	
 		.open();
 		font-weight: 400;
@@ -3275,21 +3281,23 @@ body{
 	}
 }
 
-@media (max-width: 375px){
-	body.lock{
+@media (max-width: 420px){
+	html.lock{
 		overflow: hidden;
+		// position: fixed;
 	}
 	.container{
-		 max-width: 375px;
-		     padding-right: 20px;
-				padding-left: 20px;
-				margin: 0;
+		max-width: 420px;
+		padding-right: 30px;
+		padding-left: 30px;
+		margin: 0;
 	 }
 	/* Первый экран */
 	.main{
-		.single-item > .slick-dots{
-			text-align: left;
-    	padding-left: 10px;
+		height: calc(90vh + 64px);
+		& .single-item > .slick-dots{
+			justify-content: flex-start;
+			padding-left: 30px;
 		}
 		
 
@@ -3391,9 +3399,10 @@ body{
 			}
 		}
 		&-header{
+			height: 64px;
 			&-logo img{
 				width: 70px;
-    		height: 25px;
+    			height: 25px;
 			}
 			&-contact{
 				display: none;
@@ -3405,7 +3414,7 @@ body{
 				}
 				& span{
 					display: block;
-					width: 148px;
+					width: 100%;
 					// .raleway();
 					font-weight: 600;
 					font-size: 16px;
@@ -3824,8 +3833,12 @@ body{
 			position: relative;
 			}
 			&-slider{
-			width: 100%;
-			position: relative;
+				width: 100%;
+				&__wrapper{
+					width: 100%;
+					position: relative;
+				}
+			
 			& .slick-list{
 					& .slick-track{
 						height: 200px;
@@ -4349,6 +4362,13 @@ body{
 		max-width: 100%;
 		padding-right: 10px;
 		padding-left: 10px;
+	}
+	.main{
+		& .single-item > .slick-dots{
+			justify-content: flex-start;
+			padding-left: 10px;
+		}
+		
 	}
 	.second{
 		&-footer{
