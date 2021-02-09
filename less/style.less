@@ -1584,6 +1584,7 @@
 			background-color: #FF0000;
 			width: 215px;
 			height: 50px;
+			margin-top: 36px !important;
 			
 			&:focus{
 			outline: none !important;
@@ -2082,6 +2083,11 @@
 	margin-bottom: 0px !important;
 	& .slick-list{
 		padding: 70px 50px !important;
+		& .slick-slide{
+				&:focus{
+					outline: none !important;
+				}
+			}
 	}
 	& .slick-track{
 		display: flex;
@@ -2463,7 +2469,7 @@
 }
 
 @media (max-width: 767px){
-	body.lock{
+	html.lock{
 		overflow: hidden;
 	}
 	.container{
@@ -2477,8 +2483,11 @@
 	display: block;
 	background-color: black;
 	opacity: 0.8;
-	height: 100vh;
+	height: 105vh;
 	width: 50%;
+	}
+	&-position{
+		height: 105vh;
 	}
 
 	&-content{
