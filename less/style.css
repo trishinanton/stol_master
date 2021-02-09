@@ -2230,7 +2230,7 @@
     width: 50%;
   }
   .main-position {
-    height: calc(90vh + 82px);
+    height: 100vh;
   }
   .main-content {
     display: flex;
