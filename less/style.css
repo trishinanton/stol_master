@@ -3068,7 +3068,7 @@
     padding-left: 30px;
   }
   .main-fon {
-    height: calc(90vh + 64px);
+    height: 100vh;
   }
   .main-position {
     height: 100vh;
