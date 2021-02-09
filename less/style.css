@@ -1850,7 +1850,6 @@
   text-align: left;
 }
 .otsivi {
-  height: 100vh;
   background: url(../img/otzizvi/Ellipse23.png) 62% 66% no-repeat, url(../img/otzizvi/Ellipse24.png) 23% 24% no-repeat;
   position: relative;
   /* &-next img{
@@ -1960,39 +1959,35 @@
 .otsivi-main-photo.slick-active {
   margin-top: 33px;
 }
-/*.project__next img{
-	position: absolute;
-  width:42px;
-  height:42px;
-  margin-left: 52%;
-  margin-top: 7%;
-}*/
-/*.project__prev img{
-	position: absolute;
-  width:42px;
-  height:42px;
-  margin-left: 106px;
-}*/
-/* .slick-slide {
-
- &:focus{
-			outline: none !important;
-		} 
-} */
-/* .slick-center {
-  padding-top:0;
-  
-} */
-/* .slick-center img {
-  max-width:160px;
-  
-} */
-/* .slick-dots li button::before {
-	display: none;
-} */
-/*.slick-track{
-	height: 325px;
-}*/
+.certificate {
+  padding: 160px 0;
+  background: url(../img/certificate/center.png) center center no-repeat, url(../img/certificate/left.png) bottom left no-repeat, url(../img/certificate/right.png) top right no-repeat;
+}
+.certificate__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.certificate-description h5 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #4F4F4F;
+}
+.certificate-description span {
+  font-weight: 600;
+  font-size: 30px;
+  color: #0B7ED6;
+}
+.certificate-description a {
+  font-weight: 600;
+  font-size: 14px;
+  color: #0B7ED6;
+  position: relative;
+}
+.certificate-description a:focus {
+  outline: none !important;
+}
 /*Часто задаваемые вопросы*/
 .otveti {
   background: url(../img/faq/faq_fon.png) no-repeat;
@@ -2211,6 +2206,15 @@
 @media (max-width: 925px) {
   .main-header-tel {
     display: none;
+  }
+}
+@media (max-width: 820px) {
+  .foot-header {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .foot-header-menu {
+    width: 78%;
   }
 }
 @media (max-width: 767px) {
@@ -2960,8 +2964,19 @@
     width: 222px;
     height: 390px;
   }
+  .certificate {
+    display: none;
+  }
   #accordionExample {
     width: 90%;
+  }
+  /* Меню в подвале сайта */
+  .foot-header {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .foot-header-menu {
+    width: 78%;
   }
 }
 @media (max-width: 645px) {

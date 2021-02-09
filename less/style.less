@@ -2042,7 +2042,7 @@
 	}
 }
 .otsivi{
-	height: 100vh;
+	
 	background: url(../img/otzizvi/Ellipse23.png) 62% 66% no-repeat, url(../img/otzizvi/Ellipse24.png) 23% 24% no-repeat; 
 	position: relative;
 	// background: url(../img/otzizvi/Ellipse24.png);
@@ -2167,44 +2167,42 @@
  }
 
 } 
+.certificate{
+	padding: 160px 0;
+	background: url(../img/certificate/center.png) center center no-repeat, url(../img/certificate/left.png) bottom left no-repeat, url(../img/certificate/right.png) top right no-repeat; 
+	&__wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-description{
+		& h5{
+			// .raleway();
+			font-weight: 600;
+			font-size: 30px;
+			color: #4F4F4F;
+		}
+		& span{
+			// .raleway();
+			font-weight: 600;
+			font-size: 30px;		
+			color: #0B7ED6;
+		}
+		& a{
+			// .raleway();
+			font-weight: 600;
+			font-size: 14px;
+			color: #0B7ED6;
+			position: relative;
+			&:focus{
+				outline: none !important;
+			}
+			
+		}
+	}
+}
 
-/*.project__next img{
-	position: absolute;
-  width:42px;
-  height:42px;
-  margin-left: 52%;
-  margin-top: 7%;
-}*/
-/*.project__prev img{
-	position: absolute;
-  width:42px;
-  height:42px;
-  margin-left: 106px;
-}*/
-/* .slick-slide {
-
- &:focus{
-			outline: none !important;
-		} 
-} */
-/* .slick-center {
-  padding-top:0;
-  
-} */
-/* .slick-center img {
-  max-width:160px;
-  
-} */
- 
-        
-
-/* .slick-dots li button::before {
-	display: none;
-} */
-
-/*.slick-track{
-	height: 325px;
-}*/
 /*Часто задаваемые вопросы*/
 .otveti{
 	// background-color: #F6F6F6;
@@ -2466,7 +2464,15 @@
 	}
 }
 @media(max-width: 820px){
-
+	.foot{
+		&-header{
+			justify-content: space-evenly;
+			align-items: center;
+			&-menu{
+				width: 78%;
+			}
+		}
+	}
 }
 
 @media (max-width: 767px){
@@ -3308,11 +3314,24 @@
 			}
 		}
 	}
+	.certificate{
+		display: none;
+	}
 	.accordion{
 		
 	}
 	#accordionExample{
 		width: 90%;
+	}
+	/* Меню в подвале сайта */
+	.foot{
+		&-header{
+			justify-content: space-evenly;
+			align-items: center;
+			&-menu{
+				width: 78%;
+			}
+		}
 	}
 }
 
