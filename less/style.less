@@ -3232,8 +3232,8 @@
 			}
 			&-description{
 				display: grid;
-				grid-template-columns: 1fr 1fr;
-				grid-column-gap: 15px;
+				grid-template-columns: 0.7fr 1fr;
+				grid-column-gap: 10px;
 				grid-template-areas: 'description-name description-square' 'description-desc description-time' ;
 				width: 100%;
 				height: 50%;
@@ -4223,17 +4223,63 @@
 				}
 			}
 			&-description{
+				display: grid;
+				grid-template-areas:'description-name' 'description-desc' 'description-square' 'description-time' ;
 				&-left{
-					display: block;
-					width: 100%;
-					margin-bottom: 10px;
-					&-name{
-
+						&-name{
+					grid-area: description-name;
+					justify-self: start;
+					width: 100vh;
+					// align-items: center; выравнивание по центру по вертикали
+					
+				}
+				&-desc{
+					grid-area: description-desc;
+					justify-self: start;
+					
+				}
+				}
+				&-right{
+					&-square{
+					grid-area: description-square;
+					justify-self: start;
+					
+					position: relative;
+					&:before{
+						// content: "";
+						position: absolute;
+						background: url(../img/galleryOfWorks/tunnel/ploshad.png) ;
+						background-size: contain;
+						width: 23px;
+						height: 23px;
+						left: -38px;
+						top: 58%;
+						transform: translateY(-50%);
 					}
-					&-desc{
-
-
+				}
+				&-time{
+					grid-area: description-time;
+					justify-self: start;
+					
+					position: relative;
+					&:before{
+						// content: "";
+						position: absolute;
+						background: url(../img/galleryOfWorks/tunnel/ploshad.png) ;
+						background-size: contain;
+						width: 23px;
+						height: 23px;
+						left: -38px;
+						top: 58%;
+						transform: translateY(-50%);
 					}
+				}
+				}
+				
+				
+
+
+					
 					& h5{
 						.open();
 						font-weight: 600;
@@ -4244,16 +4290,9 @@
 						font-weight: normal;
 						font-size: 16px;
 					}
-				}
-				&-right{
-					display: block;
-					width: 100%;
-					&-square{
-
-					}
-					&-time{
-
-					}
+				
+		
+					
 					& p{
 						.open();
 						font-weight: normal;
@@ -4261,7 +4300,7 @@
 						margin-left: 37px;
 						margin-bottom: 10px;
 					}
-				}
+				
 			}
 			&-count{
 				.open();
