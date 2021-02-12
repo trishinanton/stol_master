@@ -932,14 +932,14 @@
               </div>
             </div>
             <div class="gallery-description">
-              <!-- <div class="gallery-description-left"> -->
-                <h5 class=gallery-description-left-name>ЖК Новоснигереевский1</h5>
-                <span class='gallery-description-left-desc'>Капитальный ремонт</span>
-              <!-- </div> -->
-              <!-- <div class="gallery-description-right"> -->
-                <p class='gallery-description-right-square'>77 м<sup><small>2</small></sup></p>
-                <p class='gallery-description-right-time gallery-description-time'>Время ремонта составило 67 дней</p>
-              <!-- </div> -->
+              <div class="gallery-description-left">
+                <h5>ЖК Новоснигереевский1</h5>
+                <span>Капитальный ремонт</span>
+              </div>
+              <div class="gallery-description-right">
+                <p>77 м<sup><small>2</small></sup></p>
+                <p class='gallery-description-time'>Время ремонта составило 67 дней</p>
+              </div>
             </div>
           </div>
         </div>
@@ -1566,22 +1566,6 @@
     </div>
   </div>
 
-
-
-
-
-
-  <div class="test-description">
-    <!-- <div class="test-description-left"> -->
-      <h5 class=test-description-name>ЖК Новоснигереевский1</h5>
-      <span class='test-description-desc'>Капитальный ремонт</span>
-    <!-- </div> -->
-    <!-- <div class="test-description-right"> -->
-      <p class='test-description-square'>77 м<sup><small>2</small></sup></p>
-      <p class='test-description-time test-description-time'>Время ремонта составило 67 дней</p>
-    <!-- </div> -->
-  </div>
-
  
 
 
@@ -1706,7 +1690,7 @@
 
 
         /* Подсчет слайдов в Примеры качества работ */
-        var slider = $('.examplesDescription.active').find('.examplesDescription-slider-picture');
+        var slider = $('.examplesDescription.activer');
         console.log(slider);
        /*Через свойство .length узнаем количество слайдеров*/
           $('.examplesDescription-count__total').text(slider.length);
@@ -1744,15 +1728,7 @@
           $('.examplesDescription-slider').slick('setPosition');
         });
 
-        var slider = $('.examplesDescription.active').find('.examplesDescription-slider-picture');
-        console.log(slider);
-        /*Через свойство .length узнаем количество слайдеров*/
-        $('.examplesDescription-count__total').text(slider.length);
-        $(".examplesDescription-slider").on('afterChange', function (event, slick, currentSlide) {
-          $(".examplesDescription-count__current").text(currentSlide + 1);
-
-
-        });
+         
        
 
       /* $('.tunnel-slider').data('name');*/

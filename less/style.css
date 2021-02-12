@@ -1673,34 +1673,8 @@
 }
 .gallery-description {
   width: 40%;
-  height: 150px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'description-name' 'description-desc' 'description-square' 'description-time';
-}
-.gallery-description-left-name {
-  grid-area: description-name;
-  justify-self: start;
-}
-.gallery-description-left-desc {
-  grid-area: description-desc;
-  justify-self: start;
-}
-.gallery-description-right-square {
-  grid-area: description-square;
-  justify-self: start;
-  margin-left: 40px;
-}
-.gallery-description-right-time {
-  grid-area: description-time;
-  justify-self: start;
-  margin-left: 40px;
-}
-.gallery-description-right p {
-  margin-left: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  height: 302px;
+  display: inline-block;
 }
 .gallery-description h5 {
   font-family: 'Open_Sans', sans-serif;
@@ -1712,12 +1686,15 @@
   font-weight: normal;
   font-size: 18px;
   color: #0B7ED6;
+  margin-top: 15px;
 }
 .gallery-description p {
   font-family: 'Open_Sans', sans-serif;
   font-weight: normal;
   font-size: 16px;
   position: relative;
+  margin-left: 38px;
+  margin-top: 15px;
 }
 .gallery-description p:before {
   content: "";
@@ -1735,6 +1712,8 @@
   font-weight: normal;
   font-size: 16px;
   position: relative;
+  margin-left: 38px;
+  margin-top: 15px;
 }
 .gallery-description p.gallery-description-time:before {
   content: "";
@@ -2770,9 +2749,6 @@
   .price-option-item-img {
     margin-bottom: 15px;
   }
-  .price-option .slick-list .slick-track .slick-slide {
-    width: 50vh;
-  }
   .price-footer .main-text-btn {
     display: none;
   }
@@ -2882,28 +2858,20 @@
     padding: 0px 12px;
   }
   .galleryOfWorks .gallery-description {
-    display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    grid-column-gap: 10px;
-    grid-template-areas: 'description-name description-square' 'description-desc description-time';
+    display: block;
     width: 100%;
     height: 50%;
   }
-  .galleryOfWorks .gallery-description-left-name {
-    grid-area: description-name;
-    justify-self: start;
+  .galleryOfWorks .gallery-description-left {
+    width: 40%;
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
+    padding-bottom: 0;
   }
-  .galleryOfWorks .gallery-description-left-desc {
-    grid-area: description-desc;
-    justify-self: start;
-  }
-  .galleryOfWorks .gallery-description-right-square {
-    grid-area: description-square;
-    justify-self: start;
-  }
-  .galleryOfWorks .gallery-description-right-time {
-    grid-area: description-time;
-    justify-self: start;
+  .galleryOfWorks .gallery-description-right {
+    width: 40%;
+    display: inline-block;
   }
   .galleryOfWorks .gallery-description-right p {
     margin-left: 0;
@@ -3010,50 +2978,6 @@
   }
   .foot-header-menu {
     width: 78%;
-  }
-  .test-description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-template-areas: 'test-name test-square' 'test-desc test-time';
-  }
-  .test-description-name {
-    grid-area: test-name;
-    justify-self: start;
-  }
-  .test-description-desc {
-    grid-area: test-desc;
-    justify-self: start;
-  }
-  .test-description-square {
-    grid-area: test-square;
-    justify-self: start;
-    position: relative;
-  }
-  .test-description-square:before {
-    position: absolute;
-    background: url(../img/galleryOfWorks/tunnel/ploshad.png);
-    background-size: contain;
-    width: 23px;
-    height: 23px;
-    left: -38px;
-    top: 58%;
-    transform: translateY(-50%);
-  }
-  .test-description-time {
-    grid-area: test-time;
-    justify-self: start;
-    position: relative;
-  }
-  .test-description-time:before {
-    position: absolute;
-    background: url(../img/galleryOfWorks/tunnel/ploshad.png);
-    background-size: contain;
-    width: 23px;
-    height: 23px;
-    left: -38px;
-    top: 58%;
-    transform: translateY(-50%);
   }
 }
 @media (max-width: 645px) {
@@ -3735,60 +3659,26 @@
   .galleryOfWorks .gallery-slider .slick-list .slick-track {
     height: 200px;
   }
-  .galleryOfWorks .gallery-description {
-    display: grid;
-    grid-template-areas: 'description-name' 'description-desc' 'description-square' 'description-time';
+  .galleryOfWorks .gallery-description-left {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
   }
-  .galleryOfWorks .gallery-description-left-name {
-    grid-area: description-name;
-    justify-self: start;
-    width: 100vh;
-  }
-  .galleryOfWorks .gallery-description-left-desc {
-    grid-area: description-desc;
-    justify-self: start;
-  }
-  .galleryOfWorks .gallery-description-right-square {
-    grid-area: description-square;
-    justify-self: start;
-    position: relative;
-  }
-  .galleryOfWorks .gallery-description-right-square:before {
-    position: absolute;
-    background: url(../img/galleryOfWorks/tunnel/ploshad.png);
-    background-size: contain;
-    width: 23px;
-    height: 23px;
-    left: -38px;
-    top: 58%;
-    transform: translateY(-50%);
-  }
-  .galleryOfWorks .gallery-description-right-time {
-    grid-area: description-time;
-    justify-self: start;
-    position: relative;
-  }
-  .galleryOfWorks .gallery-description-right-time:before {
-    position: absolute;
-    background: url(../img/galleryOfWorks/tunnel/ploshad.png);
-    background-size: contain;
-    width: 23px;
-    height: 23px;
-    left: -38px;
-    top: 58%;
-    transform: translateY(-50%);
-  }
-  .galleryOfWorks .gallery-description h5 {
+  .galleryOfWorks .gallery-description-left h5 {
     font-family: 'Open_Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
   }
-  .galleryOfWorks .gallery-description span {
+  .galleryOfWorks .gallery-description-left span {
     font-family: 'Open_Sans', sans-serif;
     font-weight: normal;
     font-size: 16px;
   }
-  .galleryOfWorks .gallery-description p {
+  .galleryOfWorks .gallery-description-right {
+    display: block;
+    width: 100%;
+  }
+  .galleryOfWorks .gallery-description-right p {
     font-family: 'Open_Sans', sans-serif;
     font-weight: normal;
     font-size: 14px;
