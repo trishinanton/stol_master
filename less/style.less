@@ -1855,8 +1855,38 @@
 	}
 	&-description{
 		width: 40%;
-		height: 302px;
-		display: inline-block;
+		height: 150px;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas: 'description-name' 'description-desc' 'description-square' 'description-time' ;
+		&-left{
+					&-name{
+						grid-area: description-name;
+						justify-self: start;
+					}
+					&-desc{
+						grid-area: description-desc;
+						justify-self: start;
+					}
+				}
+				&-right{
+					&-square{
+						grid-area: description-square;
+						justify-self: start;
+						margin-left: 40px;
+					}
+					&-time{
+						grid-area: description-time;
+						justify-self: start;
+						margin-left: 40px;
+					}
+					& p{
+						margin-left: 0;
+					margin-top: 0;
+					padding-bottom: 0;
+					margin-bottom: 0;
+					}
+				}
 		& h5{
 			.open();
 			font-weight: 600;
@@ -1867,15 +1897,15 @@
 			font-weight: normal;
 			font-size: 18px;
 			color: #0B7ED6;
-			margin-top: 15px;
+			
 		}
 		& p{
 			.open();
 			font-weight: normal;
 			font-size: 16px;
 			position: relative;
-			margin-left: 38px;
-			margin-top: 15px;
+			
+			
 			&:before{
 				content: "";
 				position: absolute;
@@ -1893,8 +1923,8 @@
 			font-weight: normal;
 			font-size: 16px;
 			position: relative;
-			margin-left: 38px;
-			margin-top: 15px;
+			// margin-left: 38px;
+			
 			&:before{
 				content: "";
 				position: absolute;
@@ -1907,6 +1937,10 @@
 				transform: translateY(-50%);
 			}
 		}
+		
+				
+				
+			
 	}
 	&-count{
 		text-align: center;
@@ -3053,6 +3087,9 @@
 					margin-bottom: 15px;
 				}
 			}
+			& .slick-list .slick-track .slick-slide{
+				width: 50vh;
+			}
 		}
 		&-footer{
 			& .main-text-btn{
@@ -3194,20 +3231,31 @@
 				padding: 0px 12px;
 			}
 			&-description{
-				display: block;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 15px;
+				grid-template-areas: 'description-name description-square' 'description-desc description-time' ;
 				width: 100%;
 				height: 50%;
 				&-left{
-
-					width: 40%;
-					display: inline-block;
-					margin-left: 0;
-					margin-top: 0;
-					padding-bottom: 0;
+					&-name{
+						grid-area: description-name;
+						justify-self: start;
+					}
+					&-desc{
+						grid-area: description-desc;
+						justify-self: start;
+					}
 				}
 				&-right{
-					width: 40%;
-					display: inline-block;
+					&-square{
+						grid-area: description-square;
+						justify-self: start;
+					}
+					&-time{
+						grid-area: description-time;
+						justify-self: start;
+					}
 					& p{
 						margin-left: 0;
 					margin-top: 0;
@@ -3337,6 +3385,65 @@
 			}
 		}
 	}
+
+
+
+
+
+	.test{
+		&-description{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap:15px;
+			grid-template-areas: 'test-name test-square' 'test-desc test-time';
+			&-name{
+				grid-area: test-name;
+				justify-self: start;
+				// align-items: center; выравнивание по центру по вертикали
+				
+			}
+			&-desc{
+				grid-area: test-desc;
+				justify-self: start;
+				
+			}
+			&-square{
+				grid-area: test-square;
+				justify-self: start;
+				
+				position: relative;
+				&:before{
+					// content: "";
+					position: absolute;
+					background: url(../img/galleryOfWorks/tunnel/ploshad.png) ;
+					background-size: contain;
+					width: 23px;
+					height: 23px;
+					left: -38px;
+					top: 58%;
+					transform: translateY(-50%);
+				}
+			}
+			&-time{
+				grid-area: test-time;
+				justify-self: start;
+				
+				position: relative;
+				&:before{
+					// content: "";
+					position: absolute;
+					background: url(../img/galleryOfWorks/tunnel/ploshad.png) ;
+					background-size: contain;
+					width: 23px;
+					height: 23px;
+					left: -38px;
+					top: 58%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+			
+	}
 }
 
 @media (max-width: 645px){
@@ -3393,6 +3500,8 @@
 		}
 	}
 
+	
+
 	/* Примеры качества разных этапов работ */
 	.examplesDescription{
 		&__wrapper{
@@ -3427,6 +3536,8 @@
 			}
 		}
 	}
+	
+	
 }
 
 @media (max-width: 420px){
@@ -4116,6 +4227,13 @@
 					display: block;
 					width: 100%;
 					margin-bottom: 10px;
+					&-name{
+
+					}
+					&-desc{
+
+
+					}
 					& h5{
 						.open();
 						font-weight: 600;
@@ -4130,6 +4248,12 @@
 				&-right{
 					display: block;
 					width: 100%;
+					&-square{
+
+					}
+					&-time{
+
+					}
 					& p{
 						.open();
 						font-weight: normal;
